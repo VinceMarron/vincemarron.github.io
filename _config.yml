@@ -4,7 +4,7 @@ markdown: kramdown
 gems:
   - jekyll-sitemap
 
-name: Vincent Marron
+name: Vince Marron
 url: https://vincemarron.github.io
 description: Placeholder for blog/site
 
