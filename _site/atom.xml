@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Vincent Marron</title>
+ <link href="https://vincemarron.github.io/atom.xml" rel="self"/>
+ <link href="https://vincemarron.github.io/"/>
+ <updated>2017-08-30T15:45:18-07:00</updated>
+ <id>https://vincemarron.github.io</id>
+ <author>
+   <name>Vincent Marron</name>
+ </author>
+ 
+ 
+   
+   <entry>
+     <title>Sample draft post</title>
+     <link href="https://vincemarron.github.io/posts/draft"/>
+     <updated>2014-02-25T00:00:00-08:00</updated>
+     <id>https://vincemarron.github.io/posts/draft</id>
+     <content type="html">&lt;p&gt;This is a draft post that isn’t ready for the wild. See how it doesn’t show up in your list of posts, nor in your RSS feed? You can, however, &lt;a href=&quot;/posts/draft/&quot;&gt;link&lt;/a&gt; directly to it.&lt;/p&gt;
+
+&lt;p&gt;To make it go live, all you have to do is remove the line, and you’re off to the races.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;You’ll want to &lt;a href=&quot;https://github.com/holman/left#readme&quot;&gt;get the code&lt;/a&gt; and read the README to learn how to
+install and set up Left for your own purposes.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions, follow and ping me on Twitter- I’m
+&lt;a href=&quot;https://twitter.com/holman&quot;&gt;@holman&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+   </entry>
+   
+ 
+   
+   <entry>
+     <title>Left</title>
+     <link href="https://vincemarron.github.io/posts/left"/>
+     <updated>2012-12-12T00:00:00-08:00</updated>
+     <id>https://vincemarron.github.io/posts/left</id>
+     <content type="html">&lt;p&gt;Left is a clean, whitespace-happy layout for &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is designed to be an easy layout to modify for your own blog. It was
+extracted from &lt;a href=&quot;http://zachholman.com&quot;&gt;zachholman.com&lt;/a&gt;, which means it was battle-hardened from
+years of posting serious blog posts about emoji and swear words.&lt;/p&gt;
+
+&lt;p&gt;You’re actually reading an example post right now. See how cool it is? Oh, be
+quiet, you’re making me blush.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;You’ll want to &lt;a href=&quot;https://github.com/holman/left#readme&quot;&gt;get the code&lt;/a&gt; and read the README to learn how to
+install and set up Left for your own purposes.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions, follow and ping me on Twitter- I’m
+&lt;a href=&quot;https://twitter.com/holman&quot;&gt;@holman&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+   </entry>
+   
+ 
+ 
+</feed>
