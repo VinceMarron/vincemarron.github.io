@@ -1,31 +1,9 @@
----
-layout: layout
----
-
-<section class="content">
-  <h1>
-    <a href="{{ page.url }}">{{ page.title }}</a>
-  </h1>
-
-  <section class="byline">
-    {{ page.date | date: "%B %e, %Y" }}
-  </section>
-
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+{% include head.html %}
+<body>
+  {% include sidebar.html %}
   {{ content }}
+</body>
 
-  <!-- TODO: bio here -->
-  <section class="meta">
-    <h3>Discussion, follow-up, etc. </h3>
-    <section class="copy">
-      <a href="https://twitter.com/{{ site.twitter }}" target="_blank">
-        <img src="{{ site.github.owner_gravatar_url }}?s=142" height="50" width="50" />
-      </a>
-
-      <p>
-        place for bio, can edit in: _layouts/post.html
-
-      </p>
-
-    </section>
-  </section>
-</section>
+</html>
