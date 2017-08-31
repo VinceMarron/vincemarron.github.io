@@ -1,0 +1,163 @@
+
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+from PIL import Image
+
+from synthesize import SynthesizeImage
+
+import moviepy.editor as mp
+
+%matplotlib inline
+```
+
+
+```python
+style_image = Image.open('samplepics/styles/kanagawa.jpg')
+style_image = style_image.resize(np.divide(style_image.size,2).astype('int32')) 
+
+print(style_image.size)
+plt.imshow(style_image)
+```
+
+    (2167, 1495)
+
+
+
+
+
+    <matplotlib.image.AxesImage at 0x7f37806c03c8>
+
+
+
+
+![png](example_files/example_1_2.png)
+
+
+
+```python
+subject_image = Image.open('samplepics/surf.jpg')
+#subject_image = subject_image.resize(np.divide(subject_image.size,2).astype('int32'))
+subject_image = subject_image.resize((1920,1080))
+print(subject_image.size)
+plt.imshow(subject_image)
+```
+
+    (1920, 1080)
+
+
+
+
+
+    <matplotlib.image.AxesImage at 0x7f378063b080>
+
+
+
+
+![png](example_files/example_2_2.png)
+
+
+
+```python
+layers= [ 'conv1_1', 'conv1_2', 'conv2_1', 'conv2_2',
+          'conv3_1', 'conv3_2', 'conv3_3', 'conv3_4',
+          'conv4_1', 'conv4_2', 'conv4_3', 'conv4_4',
+          'conv5_1', 'conv5_2', 'conv5_3', 'conv5_4',]
+```
+
+
+```python
+path = '/home/vin/nbs/StyleTransfer/'
+```
+
+
+```python
+make = SynthesizeImage(style_image, subject_image, path)
+```
+
+
+```python
+make.get_style_desc(layers)
+make.infer_loss(layers)
+```
+
+
+```python
+make.scipy_optimizer('kanagawa_surf2', 100)
+```
+
+    loss: 283,067,584.0
+    INFO:tensorflow:Optimization terminated with:
+      Message: b'STOP: TOTAL NO. of ITERATIONS EXCEEDS LIMIT'
+      Objective function value: 372448.375000
+      Number of iterations: 101
+      Number of functions evaluations: 109
+    loss: 373,257.25
+    loss pre-clip: 372,004.78125
+    time: 177.0 loss post-clip: 6,922,139.0
+
+
+
+![png](example_files/example_7_1.png)
+
+
+
+```python
+make.build_image('kanagawa_surf', 200, 2, 10, log_ims = True)
+```
+
+    loss: 283,065,824.0
+    step: 10 time: 69.2 loss: 69,184,296.0
+    step: 20 time: 79.9 loss: 42,279,104.0
+    step: 30 time: 90.7 loss: 29,190,802.0
+    step: 40 time: 101.5 loss: 21,643,188.0
+    step: 50 time: 112.4 loss: 16,912,902.0
+    step: 60 time: 123.3 loss: 13,691,656.0
+    step: 70 time: 134.1 loss: 11,363,499.0
+    step: 80 time: 144.9 loss: 9,596,957.0
+    step: 90 time: 156.1 loss: 8,203,902.5
+    step: 100 time: 167.2 loss: 7,102,855.5
+    step: 110 time: 178.2 loss: 6,171,730.5
+    step: 120 time: 189.0 loss: 5,410,097.0
+    step: 130 time: 200.0 loss: 4,753,665.5
+    step: 140 time: 210.9 loss: 4,199,005.0
+    step: 150 time: 221.7 loss: 3,731,410.75
+    step: 160 time: 232.5 loss: 3,312,324.75
+    step: 170 time: 243.3 loss: 2,952,289.25
+    step: 180 time: 254.4 loss: 2,656,976.75
+    step: 190 time: 265.2 loss: 2,384,353.0
+    step: 200 time: 276.1 loss: 2,147,762.75
+    time: 276.6 loss post-clip: 5,882,607.0
+
+
+
+![png](example_files/example_8_1.png)
+
+
+
+```python
+clip1 = mp.ImageSequenceClip(make.imagelist, fps=10)
+```
+
+
+```python
+clip1.write_videofile("kanagawa_surf.avi",codec='libx264')
+```
+
+    [MoviePy] >>>> Building video kanagawa_surf.avi
+    [MoviePy] Writing video kanagawa_surf.avi
+
+
+    100%|██████████| 202/202 [00:02<00:00, 67.91it/s]
+
+
+    [MoviePy] Done.
+    [MoviePy] >>>> Video ready: kanagawa_surf.avi 
+    
+
+
+
+```python
+
+```
