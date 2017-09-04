@@ -17,7 +17,7 @@ category: posts
 
 ## H2 header
 
-This is a draft post that isn't ready for the wild. See how it doesn't show up in your list of posts, nor in your RSS feed? You can, however, [link](/posts/draft/) directly to it.
+This is a draft post that isn't ready for the wild. See how it doesn't show up in your list of posts, nor in your RSS feed? You can, however, [link](/posts/draft) directly to it.
 
 To make it go live, all you have to do is remove the line, and you're off to the races.
 
