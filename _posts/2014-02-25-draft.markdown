@@ -4,7 +4,7 @@ title: Sample draft post
 category: posts
 ---
 
-- [Heading](#Test)
+- [Test](#heading)
   * [Sub-heading](#sub-heading)
     + [Sub-sub-heading](#sub-sub-heading)
 - [Crazy](#heading-1)
