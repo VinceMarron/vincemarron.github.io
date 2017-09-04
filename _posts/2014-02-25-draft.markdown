@@ -4,7 +4,7 @@ title: Sample draft post
 category: posts
 ---
 
-{::options auto_ids="false" footnote_nr="5" /}
+{::options auto_ids="true" footnote_nr="5" /}
 
 # Contents
 {:.no_toc}
