@@ -6,7 +6,7 @@ category: posts
 
 - [Test](#Test)
   * [Sub-heading](#sub-heading)
-    + [See if goes to also test](#Also test)
+    + [See-also-test](#Also test)
 - [Crazy](#heading-1)
   * [Sub-heading](#sub-heading-1)
     + [Sub-sub-heading](#sub-sub-heading-1)
