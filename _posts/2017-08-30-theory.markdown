@@ -1,3 +1,13 @@
+---
+layout: post
+title: Theory
+category: posts
+---
+
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 
 
 ```python
@@ -14,7 +24,10 @@ The style-loss function employed in [Gatys et al](https://arxiv.org/abs/1508.065
 A [Gram matrix](https://en.wikipedia.org/wiki/Gramian_matrix) is a non-central second moment. The example below is designed to illustrate how variables can have different [central moments](https://en.wikipedia.org/wiki/Moment_(mathematics) (means and covariances) but identical Gram matrices. 
 
 
-Consider two random vectors, X and Y, in three dimensional space that follow [multivariate gaussian](https://en.wikipedia.org/wiki/Multivariate_normal_distribution) distributions. Specifically X~*N<sub>3</sub>*(mean<sub>X</sub>, cov<sub>X</sub>) and Y~*N<sub>3</sub>*(mean<sub>Y</sub>, cov<sub>Y</sub>):
+Consider two random vectors, $$X$$ and $$Y$$, in three dimensions that follow [multivariate gaussian](https://en.wikipedia.org/wiki/Multivariate_normal_distribution) distributions. Specifically $$X\sim\mathcal{N_3}(mean_X, cov_X)$$ and $$Y\sim\mathcal{N_3}(mean_Y, cov_Y)$$:
+
+
+
 
 ```python
 mean_X = np.array([[0.0,-0.5,0.5]])
